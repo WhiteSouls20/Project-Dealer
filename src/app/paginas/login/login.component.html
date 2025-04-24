@@ -1,1 +1,28 @@
-<p>login works!</p>
+<div class="login-container">
+    <div class="login-card" @fadeSlideIn>
+        <h2>Portal Dealer</h2>
+        <p class="subtitle">Inicia sesión en tu cuenta</p>
+
+        <form>
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Correo electrónico</mat-label>
+                <input matInput type="email" required />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Contraseña</mat-label>
+                <input matInput type="password" required />
+            </mat-form-field>
+
+            <button mat-flat-button color="primary" class="login-btn">Iniciar Sesión</button>
+        </form>
+
+        <div class="register-link">
+            ¿No tienes una cuenta?
+            <a routerLink="/registro">Regístrate aquí</a>
+            <div class="enlace-recuperar">
+                <a routerLink="/recuperar-cuenta">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </div>
+</div>

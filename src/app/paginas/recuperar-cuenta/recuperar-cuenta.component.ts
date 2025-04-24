@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
-import { RouterModule } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-recuperar-cuenta',
   standalone: true,
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
-  imports: [RouterModule, MatFormFieldModule, MatInputModule, MatButtonModule],
+  templateUrl: './recuperar-cuenta.component.html',
+  styleUrls: ['./recuperar-cuenta.component.scss'],
+  imports: [MatFormFieldModule, MatInputModule, MatButtonModule, RouterModule],
   animations: [
     trigger('fadeSlideIn', [
       transition(':enter', [
@@ -23,4 +23,4 @@ import { MatButtonModule } from '@angular/material/button';
     ]),
   ],
 })
-export class LoginComponent {}
+export class RecuperarCuentaComponent {}
