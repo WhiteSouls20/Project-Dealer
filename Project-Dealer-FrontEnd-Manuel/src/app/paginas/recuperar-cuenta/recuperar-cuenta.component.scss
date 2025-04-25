@@ -1,0 +1,53 @@
+.recuperar-container {
+  background-image: url("/assets/imagenes/fondo_recuperar.png"); // Cambia al fondo que tú elijas
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recuperar-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #333;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .email-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .boton-enviar {
+    width: 100%;
+    padding: 0.6rem;
+    font-weight: bold;
+  }
+
+  .enlaces-inferiores {
+    margin-top: 1rem;
+    a {
+      font-size: 0.9rem;
+      color: #3f51b5;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

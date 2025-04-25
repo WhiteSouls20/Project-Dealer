@@ -1,0 +1,22 @@
+<div class="recuperar-container" @fadeSlideIn>
+    <div class="recuperar-box">
+        <h1>¿Ha olvidado su contraseña?</h1>
+        <p>
+            Introduzca la dirección de correo electrónico que utilizó para registrarse. Le enviaremos instrucciones para
+            recuperarla.
+        </p>
+
+        <form>
+            <mat-form-field appearance="outline" class="email-field">
+                <mat-label>Correo electrónico</mat-label>
+                <input matInput type="email" placeholder="Ejemplo: correo@.com" required>
+            </mat-form-field>
+
+            <button mat-flat-button color="primary" class="boton-enviar">Enviar</button>
+        </form>
+
+        <div class="enlaces-inferiores">
+            <a routerLink="/login">Volver a iniciar sesión</a>
+        </div>
+    </div>
+</div>
