@@ -1,9 +1,8 @@
 <div class="inicio-wrapper">
-    <!-- Heaader -->
+    <!-- Navbar -->
     <header class="header">
         <div class="logo">
-            <span><img src="/assets/imagenes/photo/Solo_logoLogo.png" width="200"></span>
-            <!--Debo reparar el pq no se muestran las imagenes-->
+            <img src="/assets/imagenes/photo/Solo_logoLogo.png" alt="Portal Dealer Logo" class="logo-img" />
             <h1 class="title">PORTAL DEALER</h1>
         </div>
         <div class="acciones">
@@ -12,27 +11,56 @@
         </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="contenido">
-        <section class="imagen-texto">
-            <div class="imagen-ficticia"></div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales
-                magna turpis, ac malesuada leo sodales eget.
-            </p>
-        </section>
+
+    <main>
+
+  <!-- Carrusel -->
+<div class="carrusel-contenedor">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/imagenes/photo/Photo1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/imagenes/photo/Photo2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/imagenes/photo/Photo3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Contenido principal -->
+        <div class="contenido">
+            <div class="row text-center">
+                <!-- Columna 1 -->
+                <div class="col">
+                    <i class="bi bi-gear" style="font-size: 3rem;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <!-- Columna 2 -->
+                <div class="col">
+                    <i class="bi bi-people" style="font-size: 3rem;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <!-- Columna 3 -->
+                <div class="col">
+                    <i class="bi bi-graph-up" style="font-size: 3rem;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <mat-slide-toggle>Toggle me!</mat-slide-toggle>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-left">
-            © 2024 Portal Dealer. Todos los derechos reservados.
+            © 2025 Portal Dealer. Todos los derechos reservados.
         </div>
         <div class="footer-right">
             <a href="#">Términos</a>
-            <!--por definir, no se si pondremos terminos, privacidad y contacto(este probablemente si)-->
             <a href="#">Privacidad</a>
             <a href="#">Contacto</a>
         </div>
