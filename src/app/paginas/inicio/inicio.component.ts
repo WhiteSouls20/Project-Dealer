@@ -9,6 +9,15 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule, MatIconModule, MatButtonModule, MatSlideToggleModule],
   templateUrl: './inicio.component.html',
-  styleUrl: './inicio.component.scss',
+  styleUrls: ['./inicio.component.scss'], // Fixed typo: styleUrl -> styleUrls
 })
-export class InicioComponent {}
+export class InicioComponent {
+  // Example property for toggle functionality
+  darkMode: boolean = false;
+
+  // Method to handle toggle changes
+  onToggleDarkMode(event: any): void {
+    this.darkMode = event.checked;
+    console.log('Dark mode:', this.darkMode);
+  }
+}

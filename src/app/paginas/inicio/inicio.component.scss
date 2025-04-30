@@ -5,7 +5,7 @@
 }
 
 main {
-  margin: 2rem; /* Agrega un margen de 20px alrededor del body */
+  margin: 2rem;
 }
 
 .inicio-wrapper {
@@ -29,7 +29,7 @@ main {
     gap: 1rem;
 
     .logo-img {
-      height: 50px; /* Ajusta el tamaño del logo */
+      height: 50px;
     }
 
     .title {
@@ -55,8 +55,8 @@ main {
 
 /* Carrusel */
 .carrusel-contenedor {
-  max-width: 100%; /* Ajusta el ancho máximo del carrusel */
-  margin: 0 auto; /* Centra el carrusel */
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .carousel img {
@@ -64,16 +64,12 @@ main {
   width: 100%;
 }
 
-
-
-
-
 /* Fondo azul grisáceo para el contenido principal */
 .contenido {
-  background-color: #2f5980; /* Azul grisáceo */
+  background-color: #2f5980;
   padding: 2rem;
-  border-radius: 8px; /* Opcional: bordes redondeados */
-  margin-top: 0; /* Elimina el margen superior del contenido */
+  border-radius: 8px;
+  margin-top: 0;
 
   .row {
     margin: 0 auto;
@@ -84,19 +80,12 @@ main {
 
     i {
       font-size: 3rem;
-      color: #ffffff; /* Cambia el color de los íconos a blanco */
-    }
-
-    .titulo {
-      margin-top: 0.5rem;
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #ffffff; /* Cambia el color del título a blanco */
+      color: #ffffff;
     }
 
     p {
       margin-top: 0.5rem;
-      color: #ffffff; /* Cambia el color del texto a blanco */
+      color: #ffffff;
     }
   }
 }
