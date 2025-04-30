@@ -11,7 +11,7 @@ class Usuario(AbstractUser):
     genero = models.CharField(max_length=20)
     rol = models.CharField(max_length=20)
 
-    USERNAME_FIELD = 'rut'
+    USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email']
 
     def __str__(self):
