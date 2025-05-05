@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { AppProgressComponent } from '../ui-components/progress/progress.component';
+import { AppMenuComponent } from '../ui-components/menu/menu.component';
 
 @Component({
   selector: 'app-inicio-2',
-  imports: [],
+  standalone: true,
+  imports: [], // Importamos el componente de menú
   templateUrl: './inicio-2.component.html',
-  styleUrl: './inicio-2.component.scss'
+  styleUrls: ['./inicio-2.component.scss']
 })
-export class Inicio2Component {
-
-}
+export class Inicio2Component {}
