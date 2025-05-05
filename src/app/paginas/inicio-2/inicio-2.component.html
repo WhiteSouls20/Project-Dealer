@@ -1,56 +1,130 @@
 <div class="inicio-wrapper">
-    <!-- Navbar -->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portal Dealer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Ver Ventas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Días Trabajados</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sueldo</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <!-- Navbar -->
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portal Dealer</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
-    </nav>
-
-    <main>
-        <!-- Contenido principal de inicio2 -->
-        <div class="contenido">
-            <h2>Bienvenido a Inicio 2</h2>
-            <p>Esta página está diseñada para usuarios autenticados.</p>
-            <p>Aquí puedes agregar contenido exclusivo para usuarios registrados.</p>
-
-
-           
-
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Ver Ventas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Días Trabajados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sueldo</a>
+            </li>
+          </ul>
         </div>
-    </main>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-left">
-            © 2025 Portal Dealer. Todos los derechos reservados.
+  <main>
+    <!-- Contenido principal de inicio2 -->
+    <div class="contenido">
+      <h2>Bienvenido a Inicio 2</h2>
+      <p>Esta página está diseñada para usuarios autenticados.</p>
+      <p>Aquí puedes agregar contenido exclusivo para usuarios registrados.</p>
+    </div>
+
+    <!-- Gráfico estático -->
+    <div class="contenido">
+      <!-- Gráfico estático -->
+      <div class="grafico-contenedor">
+        <h3>Ventas Semanales</h3>
+        <div class="grafico-barras">
+          <div class="barra" style="height: 60%" title="Lunes: $120"></div>
+          <div class="barra" style="height: 75%" title="Martes: $150"></div>
+          <div class="barra" style="height: 90%" title="Miércoles: $180"></div>
+          <div class="barra" style="height: 100%" title="Jueves: $200"></div>
+          <div class="barra" style="height: 85%" title="Viernes: $170"></div>
+          <div class="barra" style="height: 110%" title="Sábado: $220"></div>
+          <div class="barra" style="height: 125%" title="Domingo: $250"></div>
         </div>
-        <div class="footer-right">
-            <a href="#" aria-label="Términos y condiciones">Términos</a>
-            <a href="#" aria-label="Política de privacidad">Privacidad</a>
-            <a href="#" aria-label="Contacto">Contacto</a>
+        <div class="grafico-labels">
+          <span>Lunes</span>
+          <span>Martes</span>
+          <span>Miércoles</span>
+          <span>Jueves</span>
+          <span>Viernes</span>
+          <span>Sábado</span>
+          <span>Domingo</span>
         </div>
-    </footer>
+      </div>
+    </div>
+
+    <!-- Gráfico de ganancias por ejecutivo -->
+    <div class="contenido">
+      <div class="grafico-contenedor">
+        <h3>Ganancias por Ejecutivo (CLP)</h3>
+        <div class="grafico-ejecutivos">
+          <div class="fila">
+            <span class="nombre">Juan Pérez</span>
+            <div class="barra" style="width: 70%;" title="Ventas: $700,000 CLP"></div>
+            <span class="valor">$700,000</span>
+          </div>
+          <div class="fila">
+            <span class="nombre">María López</span>
+            <div class="barra" style="width: 85%;" title="Ventas: $850,000 CLP"></div>
+            <span class="valor">$850,000</span>
+          </div>
+          <div class="fila">
+            <span class="nombre">Carlos Díaz</span>
+            <div class="barra" style="width: 60%;" title="Ventas: $600,000 CLP"></div>
+            <span class="valor">$600,000</span>
+          </div>
+          <div class="fila">
+            <span class="nombre">Ana González</span>
+            <div class="barra" style="width: 95%;" title="Ventas: $950,000 CLP"></div>
+            <span class="valor">$950,000</span>
+          </div>
+          <div class="fila">
+            <span class="nombre">Pedro Ramírez</span>
+            <div class="barra" style="width: 50%;" title="Ventas: $500,000 CLP"></div>
+            <span class="valor">$500,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      © 2025 Portal Dealer. Todos los derechos reservados.
+    </div>
+    <div class="footer-right">
+      <a href="#" aria-label="Términos y condiciones">Términos</a>
+      <a href="#" aria-label="Política de privacidad">Privacidad</a>
+      <a href="#" aria-label="Contacto">Contacto</a>
+    </div>
+  </footer>
 </div>
-
