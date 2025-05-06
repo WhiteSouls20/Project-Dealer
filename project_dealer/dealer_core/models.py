@@ -9,9 +9,9 @@ class Usuario(AbstractUser):
     foto_perfil = models.ImageField(upload_to='perfiles/', blank=True, null=True)
     archivo = models.FileField(upload_to='archivos/', blank=True, null=True)
     genero = models.CharField(max_length=20)
-    rol = models.CharField(max_length=20)
+    rol = models.CharField(max_length=20, blank=True, null=True)
 
-    USERNAME_FIELD = 'rut'
+    USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email']
 
     def __str__(self):

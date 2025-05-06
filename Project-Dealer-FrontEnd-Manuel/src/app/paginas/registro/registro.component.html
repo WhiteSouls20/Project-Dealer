@@ -1,69 +1,64 @@
 <div class="registro-wrapper" [@fadeSlideIn]>
     <div class="formulario-container">
-        <!-- Formulario -->
-        <form>
-            <div class="form-grid">
-                <mat-form-field appearance="outline">
-                    <mat-label>Usuario</mat-label>
-                    <input matInput required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>RUN</mat-label>
-                    <input matInput required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Primer Nombre</mat-label>
-                    <input matInput required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Apellido Paterno</mat-label>
-                    <input matInput required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Correo</mat-label>
-                    <input matInput type="email" required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Celular</mat-label>
-                    <input matInput type="tel" required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Dirección</mat-label>
-                    <input matInput required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Contrasena</mat-label>
-                    <input matInput required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Confirme Contrasena</mat-label>
-                    <input matInput required />
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Género</mat-label>
-                    <mat-select>
-                        <mat-option value="masculino">Masculino</mat-option>
-                        <mat-option value="femenino">Femenino</mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </div>
-        </form>
-
-        <!-- Boton de registro e imagen derecha -->
-        <div class="columna-derecha">
-            <img src="assets/motivacional.jpg" alt="aqui va imagen acorde(borrar esto al aplicar)" />
-            <p>Accede a beneficios exclusivos como cliente de Portal Dealer.</p>
-            <button mat-raised-button color="primary" [routerLink]="'/cuenta'">Registrarse</button>
+      <!-- Formulario -->
+      <form [formGroup]="formulario">
+        <div class="form-grid">
+          <mat-form-field appearance="outline">
+            <mat-label>Usuario</mat-label>
+            <input matInput formControlName="username" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Rut</mat-label>
+            <input matInput formControlName="rut" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Primer Nombre</mat-label>
+            <input matInput formControlName="first_name" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Apellido Paterno</mat-label>
+            <input matInput formControlName="last_name" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Correo</mat-label>
+            <input matInput formControlName="email" type="email" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Celular</mat-label>
+            <input matInput formControlName="celular" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Dirección</mat-label>
+            <input matInput formControlName="direccion" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" formControlName="password" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Género</mat-label>
+            <mat-select formControlName="genero">
+              <mat-option value="masculino">Masculino</mat-option>
+              <mat-option value="femenino">Femenino</mat-option>
+            </mat-select>
+          </mat-form-field>
         </div>
-
+      </form>
+  
+      <!-- Imagen y botón de envío -->
+      <div class="columna-derecha">
+        <img src="assets/motivacional.jpg" alt="imagen motivacional" />
+        <p>Accede a beneficios exclusivos como cliente de Portal Dealer.</p>
+        <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Registrarse</button>
+      </div>
     </div>
-</div>
+  </div>
+  
