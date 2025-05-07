@@ -1,0 +1,21 @@
+.calendar-container {
+  max-width: 400px; /* Ajusta el tamaño del calendario */
+  margin: 0 auto; /* Centra el calendario */
+  padding: 1rem;
+}
+
+.calendar-title {
+  font-size: 1rem; /* Tamaño más pequeño para el título */
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.calendar-table {
+  font-size: 0.8rem; /* Reduce el tamaño del texto en la tabla */
+}
+
+.table-primary {
+  background-color: #007bff !important;
+  color: white;
+  font-weight: bold;
+}

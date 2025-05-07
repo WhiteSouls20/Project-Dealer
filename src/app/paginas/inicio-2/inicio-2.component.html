@@ -31,13 +31,28 @@
     <main>
         <!-- Contenido principal de inicio2 -->
         <div class="contenido">
-            <h2>Bienvenido a Inicio 2</h2>
-            <p>Esta página está diseñada para usuarios autenticados.</p>
-            <p>Aquí puedes agregar contenido exclusivo para usuarios registrados.</p>
+            <!-- Fila con el nombre del usuario -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Bienvenido, {{ username }}</h2>
+                </div>
+            </div>
 
+            <!-- Fila con los gráficos -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <canvas id="ventasChart"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <canvas id="dineroChart"></canvas>
+                </div>
+            </div>
 
-           
-
+            <div class="row mt-4">
+                <div class="col-12">
+                    <app-calendar></app-calendar>
+                </div>
+            </div>
         </div>
     </main>
 
