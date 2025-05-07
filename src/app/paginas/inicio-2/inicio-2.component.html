@@ -1,32 +1,11 @@
 <div class="inicio-wrapper">
     <!-- Navbar -->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portal Dealer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Ver Ventas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Días Trabajados</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sueldo</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header class="header">
+        <div class="logo">
+            <img src="/assets/imagenes/photo/Solo_logoLogo.png" alt="Portal Dealer Logo" class="logo-img" />
+            <h1 class="title">PORTAL DEALER</h1>
         </div>
-    </nav>
+    </header>
 
     <main>
         <!-- Contenido principal de inicio2 -->
@@ -38,19 +17,30 @@
                 </div>
             </div>
 
-            <!-- Fila con los gráficos -->
+            <!-- Fila con el input y la tarjeta de información del usuario -->
             <div class="row mt-4">
-                <div class="col-md-6">
-                    <canvas id="ventasChart"></canvas>
+                <!-- Columna para el input -->
+                <div class="col-md-6 text-center">
+                    <label for="codigoSupervisor" class="form-label">Ingresar código de supervisor</label>
+                    <div class="input-group w-75 mx-auto">
+                        <input type="text" id="codigoSupervisor" class="form-control" placeholder="Código de supervisor">
+                        <button class="btn btn-primary" type="button">Aceptar</button>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <canvas id="dineroChart"></canvas>
-                </div>
-            </div>
 
-            <div class="row mt-4">
-                <div class="col-12">
-                    <app-calendar></app-calendar>
+                <!-- Columna para la tarjeta de información del usuario -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            Información del Usuario
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Nombre:</strong> {{ username }}</p>
+                            <p><strong>Correo:</strong> usuario&#64;ejemplo.com</p>
+                            <p><strong>Edad:</strong> 30 años</p>
+                            <p><strong>Región:</strong> Región Metropolitana</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
